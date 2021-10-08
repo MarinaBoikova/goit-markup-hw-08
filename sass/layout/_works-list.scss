@@ -1,0 +1,27 @@
+.works-list {
+  display: flex;
+}
+.works-list-items {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.works-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  text-align: center;
+}
+.works-title-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: 370px;
+  position: absolute;
+  bottom: 0;
+}

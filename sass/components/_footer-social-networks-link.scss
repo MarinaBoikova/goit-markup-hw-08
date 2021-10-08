@@ -1,0 +1,18 @@
+.footer__social-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--primary-white-color);
+  background-color: #FFFFFF10;
+  border-radius: 50%;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover{
+    background-color: var(--accent-color);
+  }
+  }
+    

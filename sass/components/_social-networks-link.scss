@@ -1,0 +1,27 @@
+.employee-social-networks-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #AFB1B8;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+
+    &:hover{
+      background:var(--accent-color);
+  color:var(--primary-white-color);
+}
+    &:focus{
+  background:var(--accent-color);
+  color:var(--primary-white-color);
+}
+}
+
+.icon-social-link{
+width: 20px;
+height: 20px;
+fill: currentColor;
+}
