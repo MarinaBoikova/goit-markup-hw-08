@@ -58,15 +58,39 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -482,6 +506,7 @@ body {
 }
 
 .hero {
+  display: none;
   background-color: #2f303a;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -582,20 +607,34 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.section-advantages {
-  padding-bottom: 0;
-}
-
-.advantages-list {
-  display: flex;
-}
-
-.advantages-item {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .advantages-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
 }
 
 .advantages-title-element {
@@ -604,20 +643,20 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-top: 0;
+  text-align: center;
   margin-bottom: 10px;
 }
 
-.advantages-text {
-  font-size: 14px;
+@media screen and (min-width: 768px) {
+  .advantages-title-element {
+    text-align: start;
+  }
 }
 
 .icon-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
-  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
