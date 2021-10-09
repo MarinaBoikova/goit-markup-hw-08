@@ -514,6 +514,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  .hero {
+    width: 1600px;
+  }
+}
+
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;

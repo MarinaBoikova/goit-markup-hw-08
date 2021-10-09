@@ -32,7 +32,9 @@
     // padding-left: 452px;
     // padding-right: 452px;
   }
-
+  @media screen and (min-width: 1200px) and (max-width: 1600px)   {
+    width: 1600px;
+  }
 }
 
 .hero-title {
@@ -57,11 +59,12 @@ margin: 0 auto;
     width: 360px;
   }
   
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px)   {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
+
 }
 .hero-button {
   color: var(--primary-white-color);
