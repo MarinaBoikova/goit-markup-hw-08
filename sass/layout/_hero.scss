@@ -26,15 +26,12 @@
   @media screen and (min-width: 768px) {
     width: 768px;
   }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 1200px)  {
+  width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
     // padding-left: 452px;
     // padding-right: 452px;
-  }
-  @media screen and (min-width: 1200px) and (max-width: 1600px)   {
-    width: 1600px;
   }
 }
 

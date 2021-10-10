@@ -115,10 +115,23 @@ body {
 .section-title {
   color: var(--primary-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
-  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .employee-social-networks-link {
@@ -539,12 +552,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
-  .hero {
-    width: 1600px;
-  }
-}
-
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
@@ -692,16 +699,8 @@ body {
   height: 70px;
 }
 
-@media screen and (max-width: 1200px) {
-  .works-container {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .works-container {
-    display: block;
-  }
+.works-container {
+  display: none;
 }
 
 .works-list {
@@ -737,18 +736,54 @@ body {
 
 .employee-list {
   display: flex;
+  justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .employee-list {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .employee-list {
+    flex-wrap: nowrap;
+  }
 }
 
 .employee-list-items {
-  width: 270px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: var(--primary-white-color);
 }
 
-.employee-list-items:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .employee-list-items {
+    flex-wrap: wrap;
+  }
+  .employee-list-items:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .employee-list-items {
+    width: calc((100% - 30px) / 2);
+  }
+  .employee-list-items:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .employee-list-items {
+    width: calc((100% - 30px) / 4);
+  }
+  .employee-list-items:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .employee-social-networks {
@@ -781,7 +816,25 @@ body {
 }
 
 .employee-card {
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-left: 122px;
+  padding-right: 122px;
+}
+
+@media screen and (min-width: 768px) {
+  .employee-card {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .employee-card {
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .section-employee {
