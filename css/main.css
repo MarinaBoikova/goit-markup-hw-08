@@ -948,8 +948,6 @@ body {
 @media screen and (min-width: 1200px) {
   .footer {
     max-width: 100%;
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 
@@ -973,6 +971,9 @@ body {
 @media screen and (min-width: 1200px) {
   .container-footer {
     max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
   }
 }
 
@@ -983,11 +984,24 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container-footer-adress {
+    margin-right: 70px;
+    text-align: start;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container-footer-social-networks {
     margin: 0 auto;
     text-align: center;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-footer-social-networks {
+    text-align: start;
   }
 }
 
@@ -1002,6 +1016,12 @@ body {
 @media screen and (min-width: 480px) {
   .footer__adress-text {
     margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__adress-text {
+    margin-bottom: 9px;
   }
 }
 
@@ -1027,6 +1047,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__items-link:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
 .footer__link-contacts {
   color: var(--transparent-white-color);
   text-decoration: none;
@@ -1048,6 +1074,12 @@ body {
   .wrapper-subscribe {
     margin: 0 auto;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper-subscribe {
+    text-align: start;
   }
 }
 
@@ -1078,6 +1110,12 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__form-subscribe {
+    display: flex;
+  }
+}
+
 .footer__input-email {
   width: 450px;
   height: 50px;
@@ -1102,6 +1140,13 @@ body {
 @media screen and (min-width: 480px) {
   .footer__input-email {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__input-email {
+    margin-right: 12px;
+    max-width: 358px;
   }
 }
 
@@ -1154,6 +1199,12 @@ body {
   .wrapper-for-tablet {
     display: flex;
     align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper-for-tablet {
+    margin-right: 93px;
   }
 }
 
