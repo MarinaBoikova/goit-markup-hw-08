@@ -1,16 +1,26 @@
-  .logo {
+.logo {
   color: var(--primary-text-color);
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  // font-size: 26px;
+  // line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   text-decoration: none;
-  width: 145px;
-  margin-right: 93px;
+  display: block;
+  // margin-right: 93px;
+  @media screen and (min-width: 480px) {
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
-  .logo--color-web {
-    color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
   }
-  .logo--color-white-studio{
-    color: var(--primary-white-color);
-  }
+}
+.logo--color-web {
+  color: var(--accent-color);
+}
+.logo--color-white-studio {
+  color: var(--primary-white-color);
+}
