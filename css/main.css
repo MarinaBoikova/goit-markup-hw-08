@@ -966,6 +966,7 @@ body {
 @media screen and (min-width: 768px) {
   .container-footer {
     max-width: 768px;
+    display: block;
   }
 }
 
@@ -1152,6 +1153,7 @@ body {
 @media screen and (min-width: 748px) {
   .wrapper-for-tablet {
     display: flex;
+    align-items: baseline;
   }
 }
 
