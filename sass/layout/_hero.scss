@@ -1,17 +1,9 @@
 .hero {
-  // display: none;
-  // width: 100%;
   background-color: #2f303a;
   padding-top: 118px;
   padding-bottom: 118px;
   padding-left: 60px;
   padding-right: 60px;
-  // height: 400px;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
-  // height: 600px;
-  // max-width: 1600px;
-  // margin: 0 auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/hero/bg-phone.jpg');
   background-repeat: no-repeat;
@@ -52,27 +44,18 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/bg-desktop@2x.jpg');
   }
 }
-// @media (min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//   .box {
-//     background-image: url('photo@2x.png');
-//   }
+
 
 
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
-  // font-size: 44px;
   font-size: 26px;
-  // line-height: 1.36;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  // width: 696px;
   width: 100%;
-  // margin-bottom: 30px;
 margin: 0 auto;
 
 @media screen and (min-width: 480px) {

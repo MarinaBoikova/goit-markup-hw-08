@@ -23,7 +23,6 @@
   padding-right: 15px;
   display: flex;
   flex-direction: column;
-  // align-items: baseline;
   justify-content: center;
   align-items: center;
   @media screen and (min-width: 768px) {
@@ -49,7 +48,6 @@
   }
 }
 .container-footer-social-networks {
-  // margin-right: 90px;
   @media screen and (min-width: 480px) {
     margin: 0 auto;
     text-align: center;
@@ -142,9 +140,7 @@
 .footer__social-items:not(:last-child) {
   margin-right: 10px;
 }
-// .footer__form-subscribe {
-//   display: flex;
-// }
+
 
 .footer__subscribe {
   font-weight: 700;
@@ -161,7 +157,6 @@
   }
 }
 .footer__input-email {
-  // width: 358px;
   width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
