@@ -7,8 +7,9 @@
   align-items: center;
 }
 .site-nav__menu-list {
-  display: flex;
-  justify-content: space-between;
+display: none;
+  // display: flex;
+  // justify-content: space-between;
 }
 .site-nav {
   display: flex;
@@ -63,10 +64,11 @@
   color: var(--accent-color);
 }
 .contacts-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-left: auto;
+  display: none;
+  // display: flex;
+  // justify-content: flex-end;
+  // align-items: center;
+  // margin-left: auto;
 }
 
 .contacts-header__item {
