@@ -115,19 +115,30 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="list works-list">
                     <li class="works-list-items">
-                        <img src="./images/box1.jpg" width="370" alt="Рабочее место">
+                        <picture>
+                            <source srcset="./images/about/img1.jpg 1x, ./images/about/img1@2x.jpg 2x" media="(min-width: 1200px)"/>
+                            <img src="./images/about/img1.jpg" width="370" alt="Рабочее место">
+                        </picture>
+                
                         <div class="works-title-thumb">
                             <p class="works-title">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="works-list-items">
-                        <img src="./images/box2.jpg" width="370" alt="Человек с телефоном и ноутбуком">
+                        <picture>
+                            <source srcset="./images/about/img2.jpg 1x, ./images/about/img2@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./images/about/img2.jpg" width="370" alt="Человек с телефоном и ноутбуком">
+                        </picture>
+                        
                         <div class="works-title-thumb">
                             <p class="works-title">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="works-list-items">
-                        <img src="./images/box3.jpg" width="370" alt="Планшет в руках">
+                        <picture>
+                            <source srcset="./images/about/img3.jpg 1x, ./images/about/img3@2x.jpg 2x" media="(min-width: 1200px)"/>
+                            <img src="./images/about/img3.jpg" width="370" alt="Планшет в руках">
+                        </picture>
                         <div class="works-title-thumb">
                             <p class="works-title">Дизайнерские решения</p>
                         </div>
@@ -142,9 +153,12 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list employee-list">
                     <li class="employee-list-items">
-                        <div class="employee-image"> 
-                        <img src="./images/team.card1.jpg" width="270" alt="Улыбающийся мужчина">
-                    </div>
+                            <picture>
+                                <source srcset="./images/team/img1-desktop.jpg 1x, ./images/team/img1-desktop.jpg 2x" media="(min-width: 1200px)"/>
+                                <source srcset="./images/team/img1-tablet.jpg 1x, ./images/team/img1-tablet.jpg 2x" media="(min-width: 768px)"/>
+                                <source srcset="./images/team/img1-phone.jpg 1x, ./images/team/img1-phone.jpg 2x" media="(min-width: 480px)"/>
+                                <img src="./images/team/img1-phone.jpg" width="450" height="460" alt="Улыбающийся мужчина">
+                            </picture>
                         <div class="employee-card">
                             <h3 class="title-employee">Игорь Демьяненко</h3>
                             <p class="position-employee">Product Designer</p>
@@ -195,7 +209,12 @@
                     </li>
 
                     <li class="employee-list-items">
-                        <img src="./images/team.card2.jpg" width="270" alt="Улыбающаяся женщина">
+                        <picture>
+                            <source srcset="./images/team/img2-desktop.jpg 1x, ./images/team/img2-desktop.jpg 2x" media="(min-width: 1200px)"/>
+                            <source srcset="./images/team/img2-tablet.jpg 1x, ./images/team/img2-tablet.jpg 2x" media="(min-width: 768px)"/>
+                            <source srcset="./images/team/img2-phone.jpg 1x, ./images/team/img2-phone.jpg 2x" media="(min-width: 480px)"/>
+                            <img src="./images/team/img2-phone.jpg" width="450" height="460" alt="Улыбающаяся женщина">
+                        </picture>
                         <div class="employee-card">
                             <h3 class="title-employee">Ольга Репина</h3>
                             <p class="position-employee">Frontend Developer</p>
@@ -245,7 +264,12 @@
                     </li>
 
                     <li class="employee-list-items">
-                        <img src="./images/team.card3.jpg" width="270" alt="Улыбающийся мужчина">
+                        <picture>
+                            <source srcset="./images/team/img3-desktop.jpg 1x, ./images/team/img3-desktop.jpg 2x" media="(min-width: 1200px)"/>
+                            <source srcset="./images/team/img3-tablet.jpg 1x, ./images/team/img3-tablet.jpg 2x" media="(min-width: 768px)"/>
+                            <source srcset="./images/team/img3-phone.jpg 1x, ./images/team/img3-phone.jpg 2x" media="(min-width: 480px)"/>
+                            <img src="./images/team/img3-phone.jpg" width="450" height="460" alt="Улыбающийся мужчина">
+                        </picture>
                         <div class="employee-card">
                             <h3 class="title-employee">Николай Тарасов</h3>
                             <p class="position-employee">Marketing</p>
@@ -295,7 +319,13 @@
                     </li>
 
                     <li class="employee-list-items">
-                        <img src="./images/team.card4.jpg" width="270" alt="Улыбающийся мужчина">
+                        <picture>
+                            <source srcset="./images/team/img4-desktop.jpg 1x, ./images/team/img4-desktop.jpg 2x" media="(min-width: 1200px)"/>
+                            <source srcset="./images/team/img4-tablet.jpg 1x, ./images/team/img4-tablet.jpg 2x" media="(min-width: 768px)"/>
+                            <source srcset="./images/team/img4-phone.jpg 1x, ./images/team/img4-phone.jpg 2x" media="(min-width: 480px)"/>
+                            <img src="./images/team/img4-phone.jpg" width="450" height="460" alt="Улыбающийся мужчина">
+                        </picture>
+
                         <div class="employee-card">
                             <h3 class="title-employee">Михаил Ермаков</h3>
                             <p class="position-employee">UI Designer</p>
@@ -497,13 +527,13 @@
                 <textarea name="user-coment" id="user-coment" placeholder="Введите текст" class="coment-text"></textarea>
             </div>
             <div class="wrapper-accept-contract">
-               <input type="checkbox" name="accept-contract" id="accept-contract" class="form-check visually-hidden">
-               <label for="accept-contract" class="accept-contract-text" ><span class="accept-contract-text-checkbox">
+            <input type="checkbox" name="accept-contract" id="accept-contract" class="form-check visually-hidden">
+            <label for="accept-contract" class="accept-contract-text" ><span class="accept-contract-text-checkbox">
                 <svg class="icon-check" width="11" height="8">
                     <use href="./images/icons.svg#icon-accept" >
                     </use>
                 </svg>
-               </span> Соглашаюсь с рассылкой и принимаю<a href="" class="accept-contract-link">Условия договора</a></label>
+            </span> Соглашаюсь с рассылкой и принимаю<a href="" class="accept-contract-link">Условия договора</a></label>
             </div>
             <button type="submit" class="button-send">Отправить</button>
             </form>
