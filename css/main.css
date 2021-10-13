@@ -110,12 +110,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 93px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -129,6 +123,18 @@ body {
 
 .logo--color-white-studio {
   color: var(--primary-white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .logo-footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    text-align: start;
+  }
 }
 
 .section-title {
@@ -935,8 +941,6 @@ body {
 .employee-card {
   padding-top: 30px;
   padding-bottom: 24px;
-  padding-left: 122px;
-  padding-right: 122px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1056,6 +1060,8 @@ body {
 }
 
 .container-footer {
+  width: 100%;
+  text-align: center;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -1103,6 +1109,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container-footer-social-networks {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container-footer-social-networks {
     text-align: start;
@@ -1147,6 +1159,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer__list-link {
+    margin-bottom: 0;
+  }
+}
+
 .footer__items-link {
   display: block;
 }
@@ -1184,12 +1202,14 @@ body {
   .wrapper-subscribe {
     margin: 0 auto;
     text-align: center;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .wrapper-subscribe {
     text-align: start;
+    width: initial;
   }
 }
 
@@ -1220,14 +1240,28 @@ body {
   margin-bottom: 20px;
 }
 
+.footer__form-subscribe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__form-subscribe {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__form-subscribe {
-    display: flex;
+    width: 570px;
+    flex-direction: row;
   }
 }
 
 .footer__input-email {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1256,6 +1290,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__input-email {
     margin-right: 12px;
+    margin-bottom: 0;
     max-width: 358px;
   }
 }
@@ -1305,16 +1340,24 @@ body {
   fill: var(--primary-white-color);
 }
 
-@media screen and (min-width: 748px) {
+@media screen and (min-width: 480px) {
+  .wrapper-for-tablet {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .wrapper-for-tablet {
     display: flex;
     align-items: baseline;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .wrapper-for-tablet {
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 

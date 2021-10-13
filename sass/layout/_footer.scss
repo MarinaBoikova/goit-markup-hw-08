@@ -18,6 +18,8 @@
   }
 }
 .container-footer {
+  width: 100%;
+  text-align: center;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -53,6 +55,9 @@
     text-align: center;
     margin-bottom: 60px;
   }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 1200px) {
     text-align: start;
   }
@@ -66,7 +71,7 @@
   font-size: 14px;
   @media screen and (min-width: 480px) {
     margin-top: 20px;
-}
+  }
 }
 
 .footer__adress-text {
@@ -84,6 +89,9 @@
   font-style: normal;
   @media screen and (min-width: 480px) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 }
 .footer__items-link {
@@ -120,9 +128,11 @@
   @media screen and (min-width: 480px) {
     margin: 0 auto;
     text-align: center;
+    width: 100%;
   }
   @media screen and (min-width: 1200px) {
- text-align: start;
+    text-align: start;
+    width: initial;
   }
 }
 
@@ -141,7 +151,6 @@
   margin-right: 10px;
 }
 
-
 .footer__subscribe {
   font-weight: 700;
   font-size: 14px;
@@ -152,12 +161,21 @@
   margin-bottom: 20px;
 }
 .footer__form-subscribe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin: 0 auto;
+  }
   @media screen and (min-width: 1200px) {
-    display: flex;
+    width: 570px;
+    flex-direction: row;
   }
 }
 .footer__input-email {
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -179,6 +197,7 @@
   }
   @media screen and (min-width: 1200px) {
     margin-right: 12px;
+    margin-bottom: 0;
     max-width: 358px;
   }
 }
@@ -221,14 +240,19 @@
   fill: var(--primary-white-color);
 }
 .wrapper-for-tablet {
-  @media screen and (min-width: 748px) {
+  @media screen and (min-width: 480px) {
+    display: block;
+    // display: flex;
+    // align-items: baseline;
+    // margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
-
-
-
