@@ -110,6 +110,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -123,18 +129,6 @@ body {
 
 .logo--color-white-studio {
   color: var(--primary-white-color);
-}
-
-@media screen and (min-width: 768px) {
-  .logo-footer {
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .logo-footer {
-    text-align: start;
-  }
 }
 
 .section-title {
@@ -1056,6 +1050,19 @@ body {
 @media screen and (min-width: 1200px) {
   .footer {
     max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer .logo-footer {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .logo-footer {
+    text-align: start;
   }
 }
 

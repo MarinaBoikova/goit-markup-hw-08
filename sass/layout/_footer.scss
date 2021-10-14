@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding-top: 60px;
   padding-bottom: 60px;
-
+  
   @media screen and (min-width: 480px) {
     max-width: 480px;
   }
@@ -16,6 +16,15 @@
     // padding-left: 452px;
     // padding-right: 452px;
   }
+  .logo-footer{
+    @media screen and (min-width: 768px){
+      text-align: center;
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 1200px){
+        text-align: start;
+      }
+    }
 }
 .container-footer {
   width: 100%;
